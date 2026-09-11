@@ -19,7 +19,7 @@ body {
   color: var(--ink);
   font: 1.0625rem/1.72 system-ui, sans-serif;
 }
-header, main:not(.home), footer, .home-content, .intro, .workshop-banner figcaption {
+header, main:not(.home), footer, .home-content, .intro {
   width: min(100% - 2.5rem, 760px);
   margin-inline: auto;
 }
@@ -53,11 +53,6 @@ h3 { margin: 0; font-size: 1.55rem; font-weight: 650; }
   display: block; width: 100%; height: min(32vw, 480px);
   object-fit: cover; object-position: center;
   border-top: 1px solid rgb(19 37 60 / 30%);
-}
-.workshop-banner figcaption {
-  padding-block: .55rem;
-  border-bottom: 1px solid rgb(248 245 238 / 14%);
-  color: var(--hero-muted); font-size: .82rem;
 }
 .intro-band { background: var(--hero-surface); color: var(--hero-ink); }
 .intro {
@@ -111,7 +106,7 @@ a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
   .intro-description { margin-top: .55rem; font-size: .95rem; }
 }
 @media (max-width: 560px) {
-  header, main:not(.home), footer, .home-content, .intro, .workshop-banner figcaption {
+  header, main:not(.home), footer, .home-content, .intro {
     width: min(100% - 2rem, 760px);
   }
   main { padding-block: 2.25rem; }

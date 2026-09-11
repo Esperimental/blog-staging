@@ -1,4 +1,0 @@
----
-cascade:
-  author: inventor
----

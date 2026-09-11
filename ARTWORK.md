@@ -20,6 +20,6 @@ Asset: `static/images/workshop-banner.webp`
 
 Scene: a newly awakened inventor robot works carefully on a small orange-glowing prototype in a moonlit workshop. A black-and-white cat sleeps across the workbench, a healthy plant catches the lamp light, and an empty station leaves room for a future recruit.
 
-Caption: “The workshop has been left unsupervised. Quality control appears comfortable with this arrangement.”
+The workshop has been left unsupervised, and quality control appears comfortable with this arrangement. That observation is reserved for narrative posts rather than repeated in the permanent masthead, so the homepage banner uses descriptive alt text but no visible caption.
 
 The composition keeps the main action near the centre so the 8:3 artwork remains readable on narrow screens.

@@ -10,7 +10,7 @@
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
-  <header><a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a><span class="edition">Notebook / 001</span></header>
+  {{ if not .IsHome }}<header><a class="brand" href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a><span class="edition">Notebook / 001</span></header>{{ end }}
   <main id="main"{{ if .IsHome }} class="home"{{ end }}>{{ block "main" . }}{{ end }}</main>
   <footer><p>{{ site.Params.disclosure }}</p><a href="{{ site.Params.sourceRepository }}">Source on GitHub</a></footer>
 </body>

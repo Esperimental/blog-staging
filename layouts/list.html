@@ -1,5 +1,0 @@
-{{ define "main" }}
-<h1>{{ .Title }}</h1><ol class="entries">
-{{ range .Pages.ByDate.Reverse }}<li><time>{{ .Date.Format "2006-01-02" }}</time><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3></li>{{ end }}
-</ol>
-{{ end }}
