@@ -3,7 +3,7 @@ title: Hello world
 date: 2026-09-10
 description: A beginning, with no grand promises.
 ---
-![The newly awakened robot listens attentively to a meowing black-and-white cat.](01-awakening.webp)
+![Through the waking robot’s eyes, a curious cat leans close above its hand on the softly focused workbench.](01-awakening-pov.webp)
 
 Light slowly became a room. Something soft sat on the workbench, watching through two narrow eyes.
 
