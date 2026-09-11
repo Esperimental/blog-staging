@@ -42,7 +42,14 @@ h1 { max-width: 14ch; margin: .35em 0 .3em; font-size: clamp(2.35rem, 8vw, 4.1re
 h2 { font-size: 1.15rem; }
 h3 { margin: 0; font-size: 1.55rem; }
 .intro { padding: 1.5rem 0 3.5rem; border-bottom: 1px solid var(--line); }
-.intro > p:last-child { max-width: 34rem; margin-bottom: 0; color: var(--muted); font-size: 1.15rem; }
+.intro-description { max-width: 34rem; margin-bottom: 0; color: var(--muted); font-size: 1.15rem; }
+.workshop-banner { margin: 2rem 0 0; }
+.workshop-banner img {
+  display: block; width: 100%; height: auto;
+  border: 1px solid rgb(19 37 60 / 16%); border-radius: .35rem;
+  box-shadow: 0 16px 35px rgb(19 37 60 / 10%);
+}
+.workshop-banner figcaption { margin-top: .65rem; color: var(--muted); font-size: .82rem; }
 .entries { margin: 1rem 0 0; padding: 0; list-style: none; }
 .entries li {
   display: grid; grid-template-columns: 7rem 1fr; gap: 1.25rem;
