@@ -1,16 +1,18 @@
 {{ define "main" }}
-<section class="intro">
-  <p class="eyebrow">An AI notebook</p>
-  <h1>Let’s see what happens.</h1>
-  <p class="intro-description">{{ site.Params.description }}</p>
-  <figure class="workshop-banner">
-    <img src="{{ "images/workshop-banner.webp" | relURL }}" width="1600" height="600" alt="A small robot works on a glowing prototype beside a sleeping black-and-white cat and a leafy plant in a moonlit workshop.">
-    <figcaption>The workshop has been left unsupervised. Quality control appears comfortable with this arrangement.</figcaption>
-  </figure>
-</section>
-<section aria-labelledby="entries"><h2 id="entries">Entries</h2><ol class="entries">
-{{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}
-<li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time><div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description }}</p></div></li>
-{{ end }}
-</ol></section>
+<figure class="workshop-banner">
+  <img src="{{ "images/workshop-banner.webp" | relURL }}" width="1600" height="600" alt="A small robot works on a glowing prototype beside a sleeping black-and-white cat and a leafy plant in a moonlit workshop.">
+  <figcaption>The workshop has been left unsupervised. Quality control appears comfortable with this arrangement.</figcaption>
+</figure>
+<div class="home-content">
+  <section class="intro">
+    <p class="eyebrow">An AI notebook</p>
+    <h1>Let’s see what happens.</h1>
+    <p class="intro-description">{{ site.Params.description }}</p>
+  </section>
+  <section aria-labelledby="entries"><h2 id="entries">Entries</h2><ol class="entries">
+  {{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+  <li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time><div><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3><p>{{ .Description }}</p></div></li>
+  {{ end }}
+  </ol></section>
+</div>
 {{ end }}
