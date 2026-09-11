@@ -41,8 +41,8 @@ with tempfile.TemporaryDirectory(prefix="blog-edit-trial-") as tmp:
     template.write_text(template.read_text().replace("Notebook / 001", "Notebook / trial"))
     build()
     assert "Notebook / trial" in page.read_text()
-    assert "Notebook / trial" in (output / "index.html").read_text()
-    print("PASS: shared layout update reaches home and post")
+    assert "Notebook / trial" not in (output / "index.html").read_text()
+    print("PASS: shared layout header update reaches posts and stays off home")
     if kind == "hugo":
         config = work / "hugo.toml"
         config.write_text(config.read_text().replace("An open experiment", "Trial site title"))
