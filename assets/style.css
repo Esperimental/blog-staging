@@ -45,7 +45,7 @@ h1, h2, h3 { font-family: Georgia, serif; line-height: 1.12; letter-spacing: -.0
 h1 { max-width: 14ch; margin: .35em 0 .3em; font-size: clamp(2.35rem, 8vw, 4.1rem); font-weight: 600; }
 h2 { font-size: 1.15rem; }
 h3 { margin: 0; font-size: 1.55rem; }
-.workshop-banner { margin: 0; background: var(--ink); }
+.workshop-banner { margin: 0; background: var(--paper); }
 .workshop-banner img {
   display: block; width: 100%; height: min(32vw, 480px);
   object-fit: cover; object-position: center;
